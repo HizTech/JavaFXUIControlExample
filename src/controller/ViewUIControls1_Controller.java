@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  *
  * @author JorgeLPR
  */
-public class viewExampleController implements Initializable {
+public class ViewUIControls1_Controller implements Initializable {
         
     @FXML
     private Button button;
