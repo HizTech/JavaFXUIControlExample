@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
@@ -129,7 +130,19 @@
                   </HBox>
                </children></VBox>
             <Separator orientation="VERTICAL" HBox.hgrow="ALWAYS" />
-            <VBox fx:id="vBoxTextField" alignment="TOP_CENTER" layoutX="186.0" layoutY="10.0" prefWidth="173.0" spacing="20.0" HBox.hgrow="ALWAYS" />
+            <VBox fx:id="vBoxTextField" alignment="TOP_CENTER" layoutX="186.0" layoutY="10.0" prefWidth="173.0" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ComboBox fx:id="combobox1" onAction="#comboboxEvent" prefWidth="150.0" promptText="Genero">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="combobox2" editable="true" prefWidth="150.0" promptText="Email" />
+                  <Separator prefWidth="200.0" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></VBox>
          </children>
       </HBox>
    </children>
